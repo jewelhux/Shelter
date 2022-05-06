@@ -1,0 +1,174 @@
+.page-header {
+  position: absolute;
+  top: 60px;
+  height: 60px;
+  width: 100%;
+}
+
+@media (max-width: $md1) {
+  .page-header {
+    top: 30px;
+  }
+}
+
+.header {
+  height: 100%;
+  max-width: 1280px; //ЕСЛИ НУЖНА ЖЕСТКАЯ ЦЕНТРОВКА, ТО УБРАТЬ ЭТО
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: $md1) {
+  .header {
+    padding: 0;
+  }
+}
+
+.header__navigation {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 0 auto;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  align-items: center;
+  max-width: 184px;
+  white-space: nowrap;
+}
+
+.logo__about {
+  text-align: center;
+  font-size: 13px;
+  line-height: 14.95px;
+  letter-spacing: 0.1em;
+  color: white;
+  margin: 10px 0 0 0;
+}
+
+.navigation__list {
+  display: flex;
+  column-gap: 35px;
+  padding: 0 3px 3px 0;
+}
+
+.navigation__link {
+  font-family: "Arial";
+  color: #CDCDCD;
+  font-size: 15px;
+  line-height: 24px;
+  &:hover {
+    color: white;
+  }
+}
+
+.active-page {
+  a {
+    color: white;
+  }
+  border-bottom: 2px solid #F1CDB3;
+}
+
+// Меню бургер
+
+.menu__logo {
+  display: none;
+}
+
+.fone-dark {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: $md3) {
+  .menu__icon {
+    top: 19px;
+    right: 53px;
+    position: absolute;
+    z-index: 20;
+    display: block;
+    width: 30px;
+    height: 22px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    &._active {
+      height: 30px;
+      transform: rotate(90deg);
+    }
+  }
+  .menu__icon span, 
+  .menu__icon::before, 
+  .menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #F1CDB3;
+  }
+  .menu__icon::before, 
+  .menu__icon::after {
+    content: "";
+  }
+  .menu__icon::before {
+    top: 0;
+  }
+  .menu__icon::after {
+    bottom: 0;
+  }
+  .menu__icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  .header__logo {
+    position: absolute;
+    left: 10px;
+    top: 2px;
+  }
+  .header__navigation {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100%;
+    background-color: #292929;
+    transition: all 0.3s ease 0s;
+    transform: translate(100%, 0px);
+    z-index: 20;
+    &.active__menu {
+      right: 0;
+      transform: translate(0, 0px);
+    }
+  }
+  .navigation__list {
+    flex-direction: column;
+    align-items: center;
+    padding: 248px 0 0 0;
+    gap: 40px;
+  }
+  .navigation__link {
+    font-size: 32px;
+    line-height: 51.2px;
+  }
+  .menu__logo {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+  }
+  .munu__title {
+    color: #F1CDB3;
+    font-size: 32px;
+    line-height: 35.2px;
+    letter-spacing: 0.06em;
+  }
+}

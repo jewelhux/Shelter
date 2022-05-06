@@ -1,0 +1,13 @@
+@import "_#variables"; // Переменные проекта
+@import "_#zeroing"; // Обнуление стилей проекта
+@import "_#technical"; // Технические и общие стили стилей проекта
+@import "_header"; // Шапка проекта
+@import "_not-only"; // Основная секция проекта
+@import "_about"; // Описание сайта
+@import "_pets"; // Животные
+@import "_help"; // Чем помочь
+@import "_donation"; // Донат
+@import "_footer"; // Подвал проекта
+
+@import "_pets-popup.scss"; // Попап
+@import "_pets-carusel"; // Каруселька

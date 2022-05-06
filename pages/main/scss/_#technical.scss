@@ -1,0 +1,136 @@
+/* Общие и технические классы */
+
+h1 {
+  color: #F1CDB3;
+  font-size: 32px;
+  line-height: 35.2px;
+  letter-spacing: 0.06em;
+}
+
+h2 {
+  color: #545454;
+  font-size: 44px;
+  line-height: 57px;
+}
+
+h3 {
+  color: #545454;
+  font-size: 35px;
+  line-height: 45.5px;
+}
+
+@media (max-width: $md3) {
+  h3 {
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
+    line-height: 32.5px;
+  }
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 22.72px;
+  letter-spacing: 0.06em;
+}
+
+p {
+  font-family: 'Arial';
+  font-size: 15px;
+  line-height: 24px;
+}
+
+._main-container {
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+@media (max-width: $md2) {
+  ._main-container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: $md3) {
+  ._main-container {
+    padding: 0 10px;
+  }
+}
+
+._container {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: $md1) {
+  ._container {
+    max-width: 708px;
+  }
+}
+
+@media (max-width: $md2) {
+  ._container {
+    max-width: 708px;
+  }
+}
+
+
+@media (max-width: $md3) {
+  ._container {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: $md4) {
+  ._container {
+    max-width: 300px;
+  }
+}
+
+._btn {
+  width: 207px;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  font-family: 'Georgia';
+  padding: 15px 45px 15px 45px;
+  border-radius: 100px;
+  background-color: #F1CDB3;
+  transition: all 0.5s ease 0s;
+  color: black;
+  cursor: pointer;
+  &:hover {
+    background-color: #FDDCC4;
+  }
+}
+
+._btn-transparent {
+  padding: 12px 42px 12px 42px;
+  background-color: transparent;
+  border: solid 2px #F1CDB3;
+  &:hover {
+    border: solid 2px #FDDCC4;
+    background-color: #FDDCC4;
+  }
+}
+
+._ftxt {
+  font-size: 20px;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 3px 18px;
+  outline: none;
+  &::placeholder {
+    font-size: 20px;
+  }
+}
+
+._bodyNotScroll {
+  overflow-y: clip;
+}
+
+@function prc($pxOne, $pxTwo) {
+  $result: $pxOne / $pxTwo * 100%;
+  @return $result;
+}

@@ -1,0 +1,178 @@
+.page-pets {
+  background: #F6F6F6;
+}
+
+.pets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 78px 0 100px 0;
+}
+
+@media (max-width: $md3) {
+  .pets {
+    padding: 42px 0 42px 0;
+  }
+}
+
+.pets__title {
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.pets__stick {
+  display: block;
+  cursor: pointer;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  transition: all 0.5s ease 0s;
+  &:hover {
+    border: 2px solid #FDDCC4;
+    background-color: #FDDCC4;
+  }
+  &:active {
+    border: 2px solid #F1CDB3;
+    background-color: #F1CDB3;
+  }
+}
+
+@media (max-width: $md3) {
+  .pets__stick {
+    margin: 20px 0 0 0;
+  }
+}
+
+.stick-left {
+  background: url('../assets/icons/Arrow-left.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stick-right {
+  background: url('../assets/icons/Arrow-rigth.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pets__show {
+  display: flex;
+  justify-content: space-between;
+  gap: 53px;
+  align-items: center;
+  margin: 60px 0 0 0;
+  width: 100%;
+  min-width: 0;
+}
+
+@media (max-width: $md1) {
+  .pets__show {
+    margin: 56px 0 0 0;
+    gap: 12px;
+  }
+}
+
+@media (max-width: $md2) {
+  .pets__show {
+    margin: 60px 0 0 0;
+  }
+}
+
+@media (max-width: $md3) {
+  .pets__show {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+    column-gap: 80px;
+    margin: 42px 0 0 0;
+  }
+} 
+
+.pets__list {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+@media (max-width: $md1) {
+  .pets__list {
+    gap: 40px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: $md3) {
+  .pets__list {
+    min-width: 100%;
+    order: -1;
+  }
+} 
+
+
+.pets__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FAFAFA;
+  transition: all 0.5s ease 0s;
+  border-radius: 9px;
+  width: 270px;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background-color: white;
+    .item_btn {
+      background-color: #FDDCC4;
+      border-color: #FDDCC4;
+    }
+  }
+}
+
+.item__name {
+  margin: 30px 0 0 0;
+}
+
+@media (max-width: $md2) {
+  .item__name {
+    margin: 29px 0 0 0;
+  }
+} 
+
+.item_btn {
+  margin: 30px 0;
+  width: 187px;
+}
+
+@media (max-width: $md3) {
+  .item_btn {
+    margin: 32px 0;
+  }
+} 
+
+.pets__btn {
+  padding: 15px 44.5px;
+  margin: 60px 0 0 0;
+  width: 261px;
+}
+
+@media (max-width: $md2) {
+  .pets__btn {
+    margin: 62px 0 0 0;
+  }
+} 
+
+@media (max-width: $md3) {
+  .pets__btn {
+    margin: 42px 0 0 0;
+  }
+} 
+
+.item__image {
+  border-radius: 9px 9px 0px 0px;
+  height: 100%;
+  width: 270px;
+  object-fit: cover;
+}

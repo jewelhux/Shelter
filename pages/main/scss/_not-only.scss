@@ -1,0 +1,97 @@
+.page-notOnly {
+  background: url('../assets/icons/noise_transparent@2x.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 85%), #211F20;
+}
+
+.notOnly {
+  display: flex;
+  justify-content: space-between;
+  padding: 180px 0 0 0;
+}
+
+@media (max-width: $md2) {
+  .notOnly {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 150px 0 0 0;
+  }
+}
+
+.notOnly__content {
+  display: flex;
+  margin: 163px 0 0 0;
+  flex-direction: column;
+  max-width: 460px;
+}
+
+@media (max-width: $md1) {
+  .notOnly__content {
+    margin: 0;
+    align-self: center;
+  }
+}
+
+.notOnly__title {
+  max-width: 310px;
+  color: white;
+}
+
+@media (max-width: $md3) {
+  .notOnly__title {
+    align-self: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    max-width: 300px;
+    font-size: 25px;
+    line-height: 32.5px;
+  }
+}
+
+.notOnly__text {
+  margin: 42px 0 0 0;
+  color: #CDCDCD;
+}
+
+@media (max-width: $md3) {
+  .notOnly__text {
+    text-align: center;
+  }
+}
+
+.notOnly__btn {
+  margin: 42px 0 0 0;
+}
+
+@media (max-width: $md1) {
+  .notOnly__btn {
+    align-self: center;
+  }
+}
+
+.notOnly__image {
+  max-width: 698px;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: $md2) {
+  .notOnly__image {
+    margin: 100px 0 0 139px;
+    flex-basis: 569px;
+  }
+}
+
+// КОСТЫЛЬ
+@media (max-width: 740px) {
+  .notOnly__image {
+    margin: 100px 0 0 40px;
+    flex-basis: 569px;
+  }
+}
+
+@media (max-width: $md3) {
+  .notOnly__image {
+    margin: 105px 0 0 40px;
+    flex-basis: 260px;
+  }
+}

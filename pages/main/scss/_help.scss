@@ -1,0 +1,105 @@
+.help {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 82px 0 100px 0;
+  align-items: center;
+}
+
+@media (max-width: $md2) {
+  .help {
+    padding: 80px 39px 100px 39px;
+  }
+}
+
+@media (max-width: $md3) {
+  .help {
+    padding: 42px 5px 42px 5px;
+  }
+}
+
+.help__title {
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: $md2) {
+  .help__title {
+    padding: 0 0 0 3px;
+  }
+}
+
+@media (max-width: $md3) {
+  .help__title {
+    line-height: 32px;
+    padding: 0;
+  }
+}
+
+.help___list {
+  max-width: 1029px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 120px;
+  row-gap: 55px;
+  margin: 60px 0 0 0;
+}
+
+@media (max-width: $md2) {
+  .help___list {
+    column-gap: 60px;
+    row-gap: 55px;
+  }
+}
+
+@media (max-width: $md3) {
+  .help___list {
+    text-align: center;
+    justify-content: flex-start;
+    margin: 42px 0 0 0;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: $md2) {
+  .card {
+    width: 170px;
+  }
+}
+
+@media (max-width: $md3) {
+  .card {
+    height: 87px;
+    width: 130px;
+  }
+}
+
+.card__name {
+  margin: 30px 0 0 0;
+  white-space: nowrap;
+}
+
+@media (max-width: $md3) {
+  .card__name {
+    font-size: 15px;
+    line-height: 16.5px;
+    letter-spacing: 0.06em;
+    margin: 23px 0 0 0;
+  }
+}
+
+@media (max-width: $md3) {
+  .card__image {
+    img {
+      width: 80%;
+    }
+  }
+}

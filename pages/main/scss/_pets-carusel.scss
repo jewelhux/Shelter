@@ -1,0 +1,61 @@
+.carousel-wrapper {
+  width: 990px;
+  overflow: hidden;
+}
+
+@media (max-width: $md1) {
+  .carousel-wrapper {
+    width: 580px;
+  }
+}
+
+@media (max-width: $md3) {
+  .carousel-wrapper {
+    order: -1;
+    width: 270px;
+  }
+}
+
+.carousel {
+  display: flex;
+  position: relative;
+  left: -990px;
+}
+
+@media (max-width: $md1) {
+  .carousel {
+    gap: 100px;
+  }
+}
+
+.carousel-item {
+  display: flex;
+  gap: 90px;
+}
+
+@media (max-width: $md1) {
+  .carousel-item {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+@keyframes move-right {
+  from {left: -990px;}
+  to {left: -1980px;}
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 0.3s;
+}
+
+@keyframes move-left {
+  from {left: -990px;}
+  to {left: 0px;}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 0.3s;
+}

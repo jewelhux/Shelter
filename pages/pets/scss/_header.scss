@@ -1,0 +1,177 @@
+.page-header {
+  position: fixed;
+  z-index: 1;
+  height: 120px;
+  width: 100%;
+  background-color: white;
+}
+
+.header {
+  height: 100%;
+  display: flex;
+  max-width: 1280px; //ЕСЛИ НУЖНА ЖЕСТКАЯ ЦЕНТРОВКА, ТО УБРАТЬ ЭТО
+  padding: 0 40px;
+  align-items: center;
+}
+
+@media (max-width: $md1) {
+  .header {
+    padding: 0;
+  }
+}
+
+.header__navigation {
+  margin: 0 0 0 auto;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 184px;
+  white-space: nowrap;
+}
+
+.logo__about {
+  text-align: center;
+  font-size: 13px;
+  line-height: 14.95px;
+  letter-spacing: 0.1em;
+  color: #292929;
+  margin: 10px 0 0 0;
+}
+
+.navigation__list {
+  display: flex;
+  column-gap: 35px;
+  padding: 0 3px 3px 0;
+}
+
+.navigation__link {
+  font-family: "Arial";
+  color: #545454;
+  font-size: 15px;
+  line-height: 24px;
+  &:hover {
+    color: #292929;
+  }
+}
+
+.active-page {
+  a {
+    color: #545454;
+  }
+  border-bottom: 2px solid #F1CDB3;
+}
+
+@media (max-width: $md3) {
+  .logo__title {
+    margin: 2px 0 0 0;
+  }
+}
+
+// Меню бургер
+
+.menu__logo {
+  display: none;
+}
+
+.page-header-fone {
+  background-color: #7b7b7b;
+}
+
+.fone-dark {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: $md3) {
+  .menu__icon {
+    top: 49px;
+    right: 53px;
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    &._active {
+      height: 30px;
+      transform: rotate(90deg);
+    }
+  }
+  .menu__icon span, 
+  .menu__icon::before, 
+  .menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #000;
+  }
+  .menu__icon::before, 
+  .menu__icon::after {
+    content: "";
+  }
+  .menu__icon::before {
+    top: 0;
+  }
+  .menu__icon::after {
+    bottom: 0;
+  }
+  .menu__icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  .header__logo {
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    top: 30px;
+  }
+  .header__navigation {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100%;
+    z-index: 10;
+    overflow: auto;
+    background-color: #FAFAFA;
+    transition: all 0.3s ease 0s;
+    transform: translate(100%, 0px);
+    &.active__menu {
+      right: 0;
+      transform: translate(0, 0px);
+    }
+  }
+  .navigation__list {
+    flex-direction: column;
+    align-items: center;
+    padding: 248px 0 0 0;
+    gap: 40px;
+  }
+  .navigation__link {
+    font-size: 32px;
+    line-height: 51.2px;
+  }
+  .menu__logo {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+  }
+  .munu__title {
+    color: #545454;
+    font-size: 32px;
+    line-height: 35.2px;
+    letter-spacing: 0.06em;
+  }
+}

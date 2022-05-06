@@ -1,0 +1,127 @@
+.page-donation {
+  background-color: #F6F6F6;
+}
+
+.donation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px 0 100px 0;
+}
+
+@media (max-width: $md1) {
+  .donation {
+    gap: 60px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media (max-width: $md3) {
+  .donation {
+    gap: 42px;
+    padding: 42px 0;
+    text-align: center;
+  }
+}
+
+.donation__info {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: $md3) {
+  .donation__info {
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+  }
+}
+
+
+.donation__title {
+  letter-spacing: 0.06em;
+}
+
+.donation__text {
+  font-family: "Georgia";
+  font-size: 15px;
+  line-height: 16.5px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  white-space: nowrap;
+}
+
+@media (max-width: $md3) {
+  .donation__text {
+    letter-spacing: 0;
+  }
+}
+
+.check {
+  max-width: 350px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  background: #F1CDB3;
+  border-radius: 9px;
+  color: #545454;
+  &:hover {
+    background-color: #FDDCC4;
+  }
+}
+
+@media (max-width: $md3) {
+  .check {
+    max-width: 282px;
+    margin: 0 0 -2px 0;
+  }
+}
+
+
+@media (max-width: $md3) {
+  .check__number {
+    font-size: 15px;
+    letter-spacing: 0.06em;
+  }
+}
+
+.donation__offer {
+  font-family: "Arial";
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B2B2B2;
+}
+
+@media (max-width: $md3) {
+  .donation__offer {
+    text-align: justify;
+    max-width: 280px;
+  }
+}
+
+.donation__image {
+  padding: 11px 0 0 0;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: $md1) {
+  .donation__image {
+    padding: 0;
+    max-width: 505px;
+  }
+}
+
+@media (max-width: $md3) {
+  .donation__image {
+    max-width: 260px;
+  }
+}

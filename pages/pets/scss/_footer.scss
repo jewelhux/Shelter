@@ -1,0 +1,174 @@
+.page-footer {
+  background: url('../assets/icons/noise_transparent@2x.png'), radial-gradient(80% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 0 0;
+  flex-wrap: wrap;
+}
+
+@media (max-width: $md1) {
+  .footer {
+    padding: 30px 0 0 0;
+    column-gap: 60px;
+    row-gap: 63px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: $md3) {
+  .footer {
+    padding: 30px 0 0 0;
+    column-gap: 0;
+    row-gap: 40px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: $md3) {
+  .footer__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__item h4, .footer__item h4 a {
+  color: #F1CDB3;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+}
+
+.footer__name {
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 0.06em;
+  color: white;
+}
+
+@media (max-width: $md3) {
+  .footer__name {
+    font-size: 25px;
+    line-height: 32.5px;
+  }
+}
+
+@media (max-width: $md3) {
+  .footer__name {
+    max-width: 270px;
+  }
+}
+
+.contact {
+  max-width: 282px;
+  padding: 16px 0 0 0;
+}
+
+@media (max-width: $md1) {
+  .contact {
+    max-width: 282px;
+    padding: 2px 0 0 2px;
+  }
+}
+@media (max-width: $md3) {
+  .contact {
+    max-width: auto;
+    padding: 0;
+  }
+}
+
+.adress {
+  max-width: 302px;
+  padding: 16px 0 0 0;
+}
+
+@media (max-width: $md1) {
+  .adress {
+    padding: 0;
+    max-width: 302px;
+  }
+}
+
+@media (max-width: $md3) {
+  .adress {
+    max-width: 302px;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+// КОСТЫЛЬ
+.footer__item-2 {
+  margin: 0 0 0 -4px;
+}
+
+@media (max-width: $md1) {
+  .footer__item-2 {
+    margin: 2px 0 0 -1px;
+  }
+}
+
+@media (max-width: $md3) {
+  .footer__item-2 {
+    margin: 0;
+  }
+}
+
+.footer__miniitem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: $md3) {
+  .location {
+    width: 100%;
+  }
+}
+
+.contact__mail {
+  margin: 40px 0 0 0;
+}
+
+.contact__phone {
+  margin: 40px 0 0 0;
+}
+
+.location-1 {
+  margin: 33px 0 0 0;
+}
+
+.location-2 {
+  margin: 33px 0 0 0;
+}
+
+@media (max-width: $md3) {
+  .location-1 {
+    margin: 39px 0 0 0;
+  }
+  .location-2 {
+    margin: 39px 0 0 0;
+  }
+}
+
+.footer-puppy__image {
+  max-width: 300px;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: $md3) {
+  .footer-puppy__image {
+    max-width: 260px;
+  }
+}
+
+.cont-url {
+  &:hover {
+    color: #FDDCC4;
+  }
+}
